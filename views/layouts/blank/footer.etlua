@@ -1,0 +1,4 @@
+<footer>footer desde footer.etlua</footer>
+<br>
+
+ <script src="<%= config.url_statics .. url .. ".js" %>"></script> 

@@ -1,0 +1,2 @@
+2016/11/21 18:45:14 [alert] 26923#0: lua_code_cache is off; this will hurt performance in /home/pepe/Documentos/lua/lapis-pp/nginx.conf.compiled:16
+2016/11/21 18:45:50 [alert] 26984#0: lua_code_cache is off; this will hurt performance in /home/pepe/Documentos/lua/lapis-pp/nginx.conf.compiled:16
