@@ -4,6 +4,7 @@ local config = require("lapis.config").get()
 local respond_to = require("lapis.application").respond_to
 
 local test = require "controllers.test"
+local demo = require "controllers.demo"
 
 app:enable("etlua")
 
@@ -14,6 +15,7 @@ app:get("/", function(self)
 end)
 
 app:match("/test/:edad", respond_to(test))
+app:match("/demo/:edad", respond_to(demo.ListarTodosHandler(self)))
 
 --app:match("/edad/:edad", respond_to(test))
 
