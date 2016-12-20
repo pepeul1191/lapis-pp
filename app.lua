@@ -16,7 +16,7 @@ end)
 
 app:match("/test/:edad", respond_to(test))
 app:match("/demo/:edad", respond_to(demo.ListarTodosHandler(self)))
-app:match("/demo/", respond_to(demo.Renderizado(self, config)))
+app:match("/demo", respond_to(demo.Renderizado(self, config)))
 
 --app:match("/edad/:edad", respond_to(test))
 

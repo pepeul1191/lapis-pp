@@ -24,7 +24,7 @@ local function Renderizado(self, config)
     return {
 		GET = function(self)
 			self.config = config
-			return { render = "demo"}
+			return { render = "demo.index"}
 		end
 	}
 end

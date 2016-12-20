@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="<%= config.url_statics%>favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Inicio Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+    <!-- Fin Fonts -->
+    <!-- Inicio CSS-->
+    <link rel="stylesheet" type="text/css" href="<%= config.url_statics%>bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="<%= config.url_statics%>bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- Inicio Beyond-->
+    <link id="beyond-link" href="<%= config.url_statics%>beyond/assets/css/beyond.min.css" rel="stylesheet" />
+    <link href="<%= config.url_statics%>beyond/assets/css/beyond.min.css" rel="stylesheet" id="beyond-link" />
+    <link href="<%= config.url_statics%>beyond/assets/css/demo.min.css" rel="stylesheet" />
+    <link href="<%= config.url_statics%>beyond/assets/css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="<%= config.url_statics%>assets/site/css/styles.css" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="<%= config.url_statics%>beyond/assets/js/skins.js"></script>
+    <!-- Inicio Load_CSS-->
+    <!-- Fin CSS-->
+</head>
+<body>
+        <!-- Inicio Modal -->
+    <button type="button" class="btn btn-primary btn-lg oculto" data-toggle="modal" data-target="#modal-container"  id="btnModal" >Launch demo modal</button>
+    <!-- Modal -->
+    <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+    <!-- Fin Modal -->
+    <!-- Loading Container
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>
+     /Loading Container -->
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand">
+                    <small>
+                    <img src="<%= config.url_statics%>beyond/assets/img/logo.png" alt="" />
+                    </small>
+                    </a>
+                </div>
+                <!-- /Navbar Barnd -->
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+                <!-- Account Area and Settings --->
+                <div class="navbar-header pull-right">
+                <div class="navbar-account">
+                <ul class="account-area"></ul>
+                <div class="setting">
+                <a id="btn-setting" title="Setting" href="#">
+                <i class="icon glyphicon glyphicon-cog"></i>
+                </a>
+                </div><div class="setting-container">
+                </div>
+                <!-- Settings -->
+            </div>
+        </div>
+        <!-- /Account Area and Settings -->
+    </div>
+    </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Page Sidebar Header-->
+                <div class="sidebar-header-wrapper">
+                    <input type="text" class="searchinput" />
+                    <i class="searchicon fa fa-search"></i>
+                    <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+                </div>
+                <!-- /Page Sidebar Header -->
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu">
+                    <!--Dashboard-->
+                    <li>
+                        <a href="<%=config.url_statics%>">
+                            <i class="menu-icon glyphicon glyphicon-home"></i>
+                            <span class="menu-text"> Home </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+        <!-- /Page Sidebar -->
+        <!-- Page Content -->
+        <div class="page-content">
+            <!-- Page Breadcrumb -->
+            <div class="page-breadcrumbs">
+                <ul class="breadcrumb">
+                    <li>
+                    <i class="fa fa-home"></i>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">More Pages</a>
+                    </li>
+                    <li class="active">Blank Page</li>
+                </ul>
+            </div>
+            <!-- /Page Breadcrumb -->
+            <!-- Page Header -->
+            <div class="page-header position-relative">
+                <div class="header-title">
+                    <h1>
+                        Blank Page
+                    </h1>
+                </div>
+            </div>
+            <!-- /Page Header -->
+            <!-- Page Body -->
