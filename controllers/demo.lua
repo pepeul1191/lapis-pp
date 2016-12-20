@@ -1,4 +1,5 @@
 local M = {}
+local config = require("lapis.config")
 
 local function ListarTodosHandler(self)
     return {
@@ -19,7 +20,17 @@ local function ListarTodosHandler(self)
 	}
 end
 
+local function Renderizado(self, config)
+    return {
+		GET = function(self)
+			self.config = config
+			return { render = "demo"}
+		end
+	}
+end
+
 M.ListarTodosHandler = ListarTodosHandler
+M.Renderizado = Renderizado
 
 return M
 
