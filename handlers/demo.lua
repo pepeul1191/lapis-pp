@@ -20,10 +20,11 @@ local function ListarTodosHandler(self)
 	}
 end
 
-local function Renderizado(self, config)
+local function Renderizado(self, config, helper)
     return {
 		GET = function(self)
 			self.config = config
+			self.helper = helper 
 			return { render = "demo.index"}
 		end
 	}

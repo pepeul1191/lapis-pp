@@ -2,9 +2,10 @@ local lapis = require("lapis")
 local app = lapis.Application()
 local config = require("lapis.config").get()
 local respond_to = require("lapis.application").respond_to
+local helper = require("libs.helper")
 
-local test = require "controllers.test"
-local demo = require "controllers.demo"
+local test = require "handlers.test"
+local demo = require "handlers.demo"
 
 app:enable("etlua")
 
@@ -16,7 +17,7 @@ end)
 
 app:match("/test/:edad", respond_to(test))
 app:match("/demo/:edad", respond_to(demo.ListarTodosHandler(self)))
-app:match("/demo", respond_to(demo.Renderizado(self, config)))
+app:match("/demo", respond_to(demo.Renderizado(self, config, helper)))
 
 --app:match("/edad/:edad", respond_to(test))
 

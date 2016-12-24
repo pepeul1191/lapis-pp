@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="icon" type="image/x-icon" href="<%= config.url_statics%>favicon.ico">
+    <link rel="icon" type="image/x-icon" href="<%= helper.get('STATICS_URL')%>favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,17 +12,17 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
     <!-- Fin Fonts -->
     <!-- Inicio CSS-->
-    <link rel="stylesheet" type="text/css" href="<%= config.url_statics%>bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="<%= config.url_statics%>bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>bower_components/font-awesome/css/font-awesome.min.css" />
     <!-- Inicio Beyond-->
-    <link id="beyond-link" href="<%= config.url_statics%>beyond/assets/css/beyond.min.css" rel="stylesheet" />
-    <link href="<%= config.url_statics%>beyond/assets/css/beyond.min.css" rel="stylesheet" id="beyond-link" />
-    <link href="<%= config.url_statics%>beyond/assets/css/demo.min.css" rel="stylesheet" />
-    <link href="<%= config.url_statics%>beyond/assets/css/animate.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="<%= config.url_statics%>assets/site/css/styles.css" />
+    <link id="beyond-link" href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.min.css" rel="stylesheet" />
+    <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.min.css" rel="stylesheet" id="beyond-link" />
+    <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/demo.min.css" rel="stylesheet" />
+    <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>assets/site/css/styles.css" />
     <link id="skin-link" href="" rel="stylesheet" type="text/css" />
     <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
-    <script src="<%= config.url_statics%>beyond/assets/js/skins.js"></script>
+    <script src="<%= helper.get('STATICS_URL')%>beyond/assets/js/skins.js"></script>
     <!-- Inicio Load_CSS-->
     <!-- Fin CSS-->
 </head>
@@ -45,7 +45,7 @@
                 <div class="navbar-header pull-left">
                     <a href="#" class="navbar-brand">
                     <small>
-                    <img src="<%= config.url_statics%>beyond/assets/img/logo.png" alt="" />
+                    <img src="<%= helper.get('STATICS_URL')%>beyond/assets/img/logo.png" alt="" />
                     </small>
                     </a>
                 </div>
@@ -91,12 +91,12 @@
                 <ul class="nav sidebar-menu">
                     <!--Dashboard-->
                     <li>
-                        <a href="<%=config.url_statics%>">
+                        <a href="<%=helper.get('STATICS_URL')%>">
                             <i class="menu-icon glyphicon glyphicon-home"></i>
                             <span class="menu-text"> Home </span>
                         </a>
                     </li>
-                    
+                    <%- helper.menu_beyond()%>
                 </ul>
                 <!-- /Sidebar Menu -->
             </div>
@@ -127,3 +127,6 @@
             </div>
             <!-- /Page Header -->
             <!-- Page Body -->
+            
+
+
