@@ -1,1 +1,43 @@
-<h1>Header</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="<%= helper.get('STATICS_URL')%>favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Inicio Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+    <!-- Fin Fonts -->
+    <!-- Inicio CSS-->
+    <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- Inicio Beyond-->
+    <link id="beyond-link" href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.min.css" rel="stylesheet" />
+    <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.min.css" rel="stylesheet" id="beyond-link" />
+    <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/demo.min.css" rel="stylesheet" />
+    <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>assets/site/css/styles.css" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="<%= helper.get('STATICS_URL')%>beyond/assets/js/skins.js"></script>
+    <!-- Inicio Load_CSS-->
+    <!-- Fin CSS-->
+</head>
+<body>
+        <!-- Inicio Modal -->
+    <button type="button" class="btn btn-primary btn-lg oculto" data-toggle="modal" data-target="#modal-container"  id="btnModal" >Launch demo modal</button>
+    <!-- Modal -->
+    <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+    <!-- Fin Modal -->
+    <!-- Loading Container
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>
+     /Loading Container -->
+            <!-- Page Body -->
+            
+
+

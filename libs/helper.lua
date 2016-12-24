@@ -37,11 +37,6 @@ local function Helper()
         return rpta
     end
 
-    function self.http_get(url)
-        local rpta = http.request(url) 
-        return json.decode(rpta)
-    end
-
     function self.get(key)
        return self.diccionario[key]
     end
