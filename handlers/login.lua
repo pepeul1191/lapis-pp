@@ -1,14 +1,13 @@
 local M = {}
 local config = require("lapis.config")
 
-local function Index(self)
+local function Index(self, config, helper)
     return {
 		GET = function(self)
-			if tonumber(self.params.edad) > 18 then
-				return "Mayor de edad " --.. self.user.name
-			else
-				return "Menor de edad"
-			end
+			self.config = config
+			self.helper = helper
+			self.helper.set("csss", {"assets/login/css/index"}) 
+			return { render = "login.index"}
 		end
 	}
 end

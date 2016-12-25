@@ -2,12 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="icon" type="image/x-icon" href="<%= helper.get('STATICS_URL')%>favicon.ico">
+    <title><%=helper.get("title")%></title>
+    <link rel="shortcut icon" href="<%= helper.get('STATICS_URL')%>assets/site/img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!-- Inicio Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
     <!-- Fin Fonts -->
@@ -15,15 +14,16 @@
     <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>bower_components/font-awesome/css/font-awesome.min.css" />
     <!-- Inicio Beyond-->
-    <link id="beyond-link" href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.min.css" rel="stylesheet" />
-    <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.min.css" rel="stylesheet" id="beyond-link" />
+    <link id="beyond-link" href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.css" rel="stylesheet" type="text/css" />
     <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/demo.min.css" rel="stylesheet" />
+    <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/typicons.min.css" rel="stylesheet" />
     <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/animate.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>assets/site/css/styles.css" />
     <link id="skin-link" href="" rel="stylesheet" type="text/css" />
-    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
     <script src="<%= helper.get('STATICS_URL')%>beyond/assets/js/skins.js"></script>
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>assets/site/css/styles.css" />
     <!-- Inicio Load_CSS-->
+    <%- helper.load_css()%>
     <!-- Fin CSS-->
 </head>
 <body>
@@ -37,7 +37,7 @@
         <div class="loader"></div>
     </div>
      /Loading Container -->
-            <!-- Page Body -->
+    <!-- Page Body -->
             
 
 

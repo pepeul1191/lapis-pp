@@ -45,6 +45,30 @@ local function Helper()
        self.diccionario[key] = value
     end
 
+    function self.load_css()
+        csss = self.diccionario["csss"]
+        rpta = ""
+        if csss ~= nil then
+            for i, css in ipairs(csss) do
+                rpta = rpta .. '<link rel="stylesheet" type="text/css" href="'.. self.diccionario["STATICS_URL"] .. css .. '.css" />'
+            end
+        end
+
+        return rpta
+    end
+
+    function self.load_js()
+        jss = self.diccionario["jss"]
+        rpta = ""
+        if jss ~= nil then
+            for i, js in ipairs(jss) do
+                rpta = rpta .. '<script src="' .. self.diccionario["STATICS_URL"] .. js .. '.js"></script>'
+            end
+        end
+
+        return rpta
+    end
+
     return self
 end
 
