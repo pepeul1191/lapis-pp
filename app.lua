@@ -3,11 +3,12 @@ local app = lapis.Application()
 local config = require("lapis.config").get()
 local respond_to = require("lapis.application").respond_to
 local helper = require("libs.helper")
+local httparty = require("libs.httparty")
 
-local error = require "handlers.error"
-local test = require "handlers.test"
-local demo = require "handlers.demo"
-local login = require "handlers.login"
+local error = require("handlers.error")
+local test = require("handlers.test")
+local demo = require("handlers.demo")
+local login = require("handlers.login")
 
 app:enable("etlua")
 
@@ -18,6 +19,7 @@ app:get("/", function(self)
 end)
 
 app:match("/login", respond_to(login.Index(self, config, helper)))
+app:match("/login/acceder", respond_to(login.Acceder(self, config, helper, httparty)))
 
 app:match("error404", "/error/access/404", respond_to(error.NoEncontrado(self, config, helper)))
 app:match("/test/:edad", respond_to(test))

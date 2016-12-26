@@ -5,10 +5,12 @@ local inspect = require('inspect')
 local function Helper()
     local self = {
         diccionario = {
+            ["key"] = "s53hHaKFQoqXTDU9",
             ["BASE_URL"] = "http://localhost:9090/",
             ["STATICS_URL"] = "http://localhost:8001/dashboard/",
             ["title"] = "Aplicacion con Pythin Pyramid",
-            ["accesos"] = "http://127.0.0.1:5001/"
+            ["accesos"] = "http://127.0.0.1:5001/",
+            ["cipher"] = "http://127.0.0.1:5000/"
         }
     }
 
