@@ -1,0 +1,17 @@
+<% render("views.layouts.application.header") %>
+
+<div class="col-lg-6 col-sm-12 col-xs-12">
+	<div class="widget">
+		<div class="widget-header bordered-bottom bordered-blue">
+			<span class="widget-caption">Gestione los usuarios del sistema</span>
+		</div>
+		<div class="widget-body">
+			<div>
+				<label class="texto-der oculto" id="txtMensajeRpta"></label>
+				<table class="list issues" style="" id="tablaPermiso"></table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% render("views.layouts.application.footer")%>

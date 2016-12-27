@@ -7,7 +7,9 @@ local function Httparty()
     local self = {}
 
     function self.get(url)
-        return http.request{url = url,method = "GET"}
+        local rq_resp = {}
+        res, code, response_headers = http.request{url = url,method = "GET", sink = ltn12.sink.table(rq_resp)}
+        return table.concat(rq_resp)
     end
 
     function self.post(url)

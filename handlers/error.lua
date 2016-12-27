@@ -6,7 +6,7 @@ local function NoEncontrado(self, config, helper)
 		GET = function(self)
 			self.config = config
 			self.helper = helper 
-			return { render = "error.404"}
+			return { render = "error.404", layout = false}
 		end
 	}
 end
@@ -16,7 +16,7 @@ local function NoLogueado(self, config, helper)
 		GET = function(self)
 			self.config = config
 			self.helper = helper 
-			return { render = "error.5050"}
+			return { render = "error.5050", layout = false}
 		end
 	}
 end
