@@ -1,15 +1,13 @@
 local http = require("socket.http")
 local io = require("io")
 local ltn12 = require("ltn12")
-local json = require("json")
 local inspect = require('inspect')
 
 local function Httparty()
     local self = {}
 
     function self.get(url)
-        local rpta = http.request{url = url,method = "GET"}
-        return json.decode(rpta)
+        return http.request{url = url,method = "GET"}
     end
 
     function self.post(url)

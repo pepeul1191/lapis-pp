@@ -90,23 +90,23 @@
                                     <!--Theme Selector Area-->
                                     <li class="theme-area">
                                         <ul class="colorpicker" id="skin-changer">
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/blue.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/azure.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/teal.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/green.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/orange.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/pink.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/darkred.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/purple.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/darkblue.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/gray.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/black.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="http://localhost:8001/dashboard/beyond/assets/css/skins/deepblue.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/blue.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/azure.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/teal.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/green.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/orange.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/pink.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/darkred.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/purple.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/darkblue.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/gray.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/black.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/deepblue.css"></a></li>
                                         </ul>
                                     </li>
                                     <!--/Theme Selector Area-->
                                     <li class="dropdown-footer">
-                                        <a href="login.html">
+                                        <a href="<%= helper.get('BASE_URL')%>salir">
                                             Sign out
                                         </a>
                                     </li>

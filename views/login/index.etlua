@@ -18,7 +18,11 @@
             <a href="http://softweb.pe">Powered by: Software Web Perú ©</a>
         </div>
     </div>
-
+    <% if helper.get("mensaje")  then%>
+    <div class="logobox">
+        <label class="color-rojo">Usario y/o contraseña incorrectos</label>
+    </div>
+    <% end %>
 </div>
 
 <% render("views.layouts.blank.footer") %>

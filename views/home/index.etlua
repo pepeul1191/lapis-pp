@@ -1,0 +1,2 @@
+<% render("views.layouts.application.header") %>
+<% render("views.layouts.application.footer")%>
