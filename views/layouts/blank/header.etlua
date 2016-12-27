@@ -14,12 +14,10 @@
     <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>bower_components/font-awesome/css/font-awesome.min.css" />
     <!-- Inicio Beyond-->
-    <link id="beyond-link" href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.css" rel="stylesheet" type="text/css" />
+    <link id="beyond-link" href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
     <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/demo.min.css" rel="stylesheet" />
     <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/typicons.min.css" rel="stylesheet" />
     <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/animate.min.css" rel="stylesheet" />
-    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
-    <script src="<%= helper.get('STATICS_URL')%>beyond/assets/js/skins.js"></script>
     <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
     <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>assets/site/css/styles.css" />
     <!-- Inicio Load_CSS-->

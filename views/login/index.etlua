@@ -9,7 +9,7 @@
         <form accept-charset="UTF-8" action="<%= helper.get('BASE_URL')%>login/acceder" method="post" class="form">
             <input type="text" class="form-control login-input" placeholder="Usuario" name="usuario"/>
             <input type="password" class="form-control login-input" placeholder="Contraseña" name="contrasenia"/>
-            <input type="submit" name="login" class="btn btn-primary btn-block login-input" value="Acceder">
+            <input type="submit" name="login" class="btn btn-primary btn-block login-input" value="Acceder" id="btn-login">
             <div class="loginbox-forgot">
                 <a href="">Se olvidó su contraseña?</a>
             </div>

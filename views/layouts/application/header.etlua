@@ -14,12 +14,10 @@
     <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>bower_components/font-awesome/css/font-awesome.min.css" />
     <!-- Inicio Beyond-->
-    <link id="beyond-link" href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.css" rel="stylesheet" type="text/css" />
+    <link id="beyond-link" href="<%= helper.get('STATICS_URL')%>beyond/assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
     <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/demo.min.css" rel="stylesheet" />
     <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/typicons.min.css" rel="stylesheet" />
     <link href="<%= helper.get('STATICS_URL')%>beyond/assets/css/animate.min.css" rel="stylesheet" />
-    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
-    <script src="<%= helper.get('STATICS_URL')%>beyond/assets/js/skins.js"></script>
     <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
     <link rel="stylesheet" type="text/css" href="<%= helper.get('STATICS_URL')%>assets/site/css/styles.css" />
     <!-- Inicio Load_CSS-->
@@ -79,7 +77,6 @@
                                     <li>
                                         <div class="avatar-area">
                                             <img src="<%= helper.get('STATICS_URL')%>beyond/assets/img/avatars/adam-jansen.jpg" class="avatar">
-                                            <span class="caption">Change Photo</span>
                                         </div>
                                     </li>
                                     <!--Avatar Area-->
@@ -87,24 +84,6 @@
                                         <a href="profile.html" class="pull-left">Profile</a>
                                         <a href="#" class="pull-right">Setting</a>
                                     </li>
-                                    <!--Theme Selector Area-->
-                                    <li class="theme-area">
-                                        <ul class="colorpicker" id="skin-changer">
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/blue.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/azure.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/teal.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/green.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/orange.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/pink.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/darkred.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/purple.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/darkblue.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/gray.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/black.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="<%= helper.get('STATICS_URL')%>dashboard/beyond/assets/css/skins/deepblue.css"></a></li>
-                                        </ul>
-                                    </li>
-                                    <!--/Theme Selector Area-->
                                     <li class="dropdown-footer">
                                         <a href="<%= helper.get('BASE_URL')%>salir">
                                             Sign out
@@ -165,7 +144,7 @@
                 <ul class="nav sidebar-menu">
                     <!--Dashboard-->
                     <li>
-                        <a href="<%=helper.get('STATICS_URL')%>">
+                        <a href="<%=helper.get('BASE_URL')%>">
                             <i class="menu-icon glyphicon glyphicon-home"></i>
                             <span class="menu-text"> Home </span>
                         </a>
@@ -182,7 +161,7 @@
                 <ul class="breadcrumb">
                     <li>
                     <i class="fa fa-home"></i>
-                        <a href="#">Home</a>
+                        <a href="<%=helper.get('BASE_URL')%>">Home</a>
                     </li>
                     <li>
                         <a href="#">More Pages</a>
