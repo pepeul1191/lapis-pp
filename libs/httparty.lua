@@ -14,7 +14,7 @@ local function Httparty()
 
     function self.post(url)
         local rq_resp = {}
-        res, code, response_headers = http.request{url = url,method = "POST", sink = ltn12.sink.table(rq_resp)}
+        res, code, response_headers = http.request{url = url, method = "POST", sink = ltn12.sink.table(rq_resp)}
         return table.concat(rq_resp)
     end
 

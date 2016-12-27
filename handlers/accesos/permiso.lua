@@ -35,7 +35,25 @@ local function Listar(self, config, helper, httparty)
 	}
 end
 
+local function Guardar(self, config, helper, httparty)
+    return {
+    	before = function(self)
+		    if self.session.estado ~= "activo" then
+		    	self:write({redirect_to = self:url_for("error5050")})
+		    end
+		end,
+		POST = function(self)
+			self.config = config
+			self.helper = helper
+			data =  self.params["data"]
+			rpta = httparty.post(helper.get("accesos") .. "permiso/guardar?data=" .. helper.url_enconde(data))
+			return { rpta, layout = false }
+		end
+	}
+end
+
 M.Index = Index
 M.Listar = Listar
+M.Guardar = Guardar
 
 return M

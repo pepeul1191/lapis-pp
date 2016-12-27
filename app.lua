@@ -29,6 +29,7 @@ app:match("error5050", "/error/access/5050", respond_to(error.NoLogueado(self, c
 -- MÓDULO ACCESOS ... RUTAS
 app:match("accesosPermisoIndex", "/accesos/permisos", respond_to(permiso.Index(self, config, helper)))
 app:match("accesosPermisoListar", "/accesos/permiso/listar", respond_to(permiso.Listar(self, config, helper, httparty)))
+app:match("accesosPermisoGuardar", "/accesos/permiso/guardar", respond_to(permiso.Guardar(self, config, helper, httparty)))
 
 -- HANDLERS DE ERRORES
 --app.handle_404 = function(self)
