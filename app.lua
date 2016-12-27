@@ -32,9 +32,9 @@ app:match("accesosPermisoListar", "/accesos/permiso/listar", respond_to(permiso.
 app:match("accesosPermisoGuardar", "/accesos/permiso/guardar", respond_to(permiso.Guardar(self, config, helper, httparty)))
 
 -- HANDLERS DE ERRORES
---app.handle_404 = function(self)
-  	--return {redirect_to = self:url_for("error404")}
---end
+app.handle_404 = function(self)
+	return {redirect_to = self:url_for("error404")}
+end
 
 -- INICIO DE LA APLICACIÓN
 return app

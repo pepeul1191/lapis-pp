@@ -1,5 +1,3 @@
-<% render("views.layouts.blank.header") %>
-
 <div class="login-container animated fadeInDown">
     <div class="loginbox bg-white">
         <div class="loginbox-title">BIENVENIDO</div>
@@ -24,5 +22,3 @@
     </div>
     <% end %>
 </div>
-
-<% render("views.layouts.blank.footer") %>

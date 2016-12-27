@@ -11,7 +11,7 @@ local function Index(self, config, helper)
 		GET = function(self)
 			self.config = config
 			self.helper = helper
-			return { render = "home.index", layout = false}
+			return { render = "home.index", layout = "layouts.application"}
 		end
 	}
 end

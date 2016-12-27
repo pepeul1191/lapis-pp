@@ -13,7 +13,7 @@ local function Index(self, config, helper)
 			self.helper = helper
 			self.helper.set("csss", {"swp/css/mootools.grid"}) 
 			self.helper.set("jss", {"swp/js/mootools.dao", "swp/js/mootools.form", "swp/js/mootools.observer", "swp/js/mootools.grid", "swp/js/mootools.chain", "assets/accesos/permisos/js/index"}) 
-			return { render = "accesos.permiso.index", layout = false}
+			return { render = "accesos.permiso.index", layout = "layouts.application"}
 		end
 	}
 end

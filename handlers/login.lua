@@ -13,7 +13,7 @@ local function Index(self, config, helper)
 			self.config = config
 			self.helper = helper
 			self.helper.set("csss", {"assets/login/css/index"}) 
-			return { render = "login.index", layout = false}
+			return { render = "login.index", layout = "layouts.blank"}
 		end
 	}
 end
@@ -54,7 +54,7 @@ local function Acceder(self, config, helper, httparty)
 				self.helper = helper
 				self.helper.set("csss", {"assets/login/css/index"})
 				self.helper.set("mensaje", true) 
-				return { render = "login.index", layout = false}
+				return { render = "login.index", layout = "layouts.blank"}
 			end
 		end
 	}
