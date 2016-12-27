@@ -21,3 +21,4 @@
 2016/12/27 07:34:46 [alert] 3286#0: lua_code_cache is off; this will hurt performance in /home/pepe/Documentos/lua/lapis-pp/nginx.conf.compiled:16
 2016/12/27 08:22:59 [alert] 4544#0: lua_code_cache is off; this will hurt performance in /home/pepe/Documentos/lua/lapis-pp/nginx.conf.compiled:16
 2016/12/27 11:34:53 [alert] 3586#0: lua_code_cache is off; this will hurt performance in /home/pepe/Documentos/lua/lapis-pp/nginx.conf.compiled:16
+2016/12/27 11:51:33 [alert] 3961#0: lua_code_cache is off; this will hurt performance in /home/pepe/Documentos/lua/lapis-pp/nginx.conf.compiled:16

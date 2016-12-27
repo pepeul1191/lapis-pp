@@ -16,6 +16,7 @@ local error = require("handlers.error")
 
 -- MÓDULO ACCESOS ... HANDLERS
 local permiso = require("handlers.accesos.permiso")
+local rol = require("handlers.accesos.rol")
 
 -- LOGIN Y ERRORES ... RUTAS
 app:match("homeIndex", "/", respond_to(home.Index(self, config, helper)))
@@ -27,14 +28,21 @@ app:match("error404", "/error/access/404", respond_to(error.NoEncontrado(self, c
 app:match("error5050", "/error/access/5050", respond_to(error.NoLogueado(self, config, helper)))
 
 -- MÓDULO ACCESOS ... RUTAS
+-- -- PERMISO
 app:match("accesosPermisoIndex", "/accesos/permisos", respond_to(permiso.Index(self, config, helper)))
 app:match("accesosPermisoListar", "/accesos/permiso/listar", respond_to(permiso.Listar(self, config, helper, httparty)))
 app:match("accesosPermisoGuardar", "/accesos/permiso/guardar", respond_to(permiso.Guardar(self, config, helper, httparty)))
+app:match("accesosListarAsociados", "/accesos/permiso/listar_asociados/:id", respond_to(permiso.ListarAsociados(self, config, helper, httparty)))
+-- -- ROL
+app:match("accesosRolIndex", "/accesos/roles", respond_to(rol.Index(self, config, helper, httparty)))
+app:match("accesosRolIListar", "/accesos/rol/listar", respond_to(rol.Listar(self, config, helper, httparty)))
+app:match("accesosRolGuardar", "/accesos/rol/guardar", respond_to(rol.Guardar(self, config, helper, httparty)))
+app:match("accesosRolAsociarPermiso", "/accesos/rol/asociar_permisos", respond_to(rol.AsociarPermisos(self, config, helper, httparty)))
 
 -- HANDLERS DE ERRORES
-app.handle_404 = function(self)
-	return {redirect_to = self:url_for("error404")}
-end
+--app.handle_404 = function(self)
+	--return {redirect_to = self:url_for("error404")}
+--end
 
 -- INICIO DE LA APLICACIÓN
 return app
